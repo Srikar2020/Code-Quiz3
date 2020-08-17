@@ -4,6 +4,35 @@ var startBtn = document.getElementById('start-quiz');
 var pages = document.querySelector(".page");
 
 
+//For page user is current 
+var currentPage = 0;
+
+// For var page question curent 
+
+var currentQuestion = 0;
+
+
+//an array for users 
+
+var users = [];
+
+
+//index for which user 
+
+var userNum;
+
+//If there isnt a user than set userNum to 1
+
+if (JSON.parse(localStorage.getItem("users"))=== null) {
+    userNum = 1;
+} // If there are users.
+
+else {
+    userNum = JSON.parse(localStorage.getItem("users")).length + 1;
+}
+
+
+
 
 // Timer that counts down from 5
 function countdown() {
@@ -143,8 +172,25 @@ var questions = [
 
     },
 
-]
-
-
+];
 
 startBtn.onclick = countdown;
+
+
+function loadPage(n) {
+    pages[currentPage].classList.remove("active");
+    pages[n].classList.add("active");
+    currentPage = n;
+}
+
+function loadNextPage() {
+    loadPage(currentPage + 1);
+    timerEl.textContent = secondsLeft;
+
+    if (currentPage === 1) {
+        setTimeout();
+    }
+}
+
+}
+
