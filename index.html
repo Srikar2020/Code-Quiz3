@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+
+
+
+    <div class = "header">
+        <a id = "highscores" href = '#' > View Highscores</a>
+        <div id = "time"> Time: <span id = "time-left">0</span></div>
+    </div>
+    <div class = "container">
+        <!--Page 1-->
+        <div class = "page">
+            <h2 id="start-page-header">Java Script Quiz</h2>
+        </div>
+            <p id = "instructions">
+                Answer as many questions as possible JavaScript questiosn are simple enough. 
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds!
+            </p>
+
+            <div class = "row"> 
+                <div class = "col text-center">
+                    <button type = "submit" id="start-quiz"> Start Quiz</button>
+                </div>
+                <p id="main"></p>
+            </div>
+
+            <!--Confused-->
+            <!--<div style-->
+    </div>
+
+    <!--Page 2-->
+    <div class="page">
+        <h2 class="question-header">Which out of these data types in JavaScript does not belong here?</h2>
+        <div>
+            <button class="choice">Boolean</button>
+            <br>
+            <button class="choice">Number</button>
+            <br>
+            <button class="choice">String</button>
+            <br>
+            <button class="choice">Lists</button>
+            <br>
+        </div>
+    </div>
+
+    <!-- Page 3-->
+    <div class="page">
+        <h2 class="question-header">What is not a built-in method in JavaScript?</h2>
+        <div>
+            <button class="choice">Anchor</button>
+            <br>
+            <button class="choice">Link</button>
+            <br>
+            <button class="choice">Concat</button>
+            <br>
+            <button class="choice">Boolean</button>
+            <br>
+        </div>
+    </div>
+
+    <!--Page 4-->
+    <div class="page">
+        <h2 class="question-header">What is not an error type in JavaScript?</h2>
+        <div>
+            <button class="choice">Syntax Error</button>
+            <br>
+            <button class="choice">Type Error</button>
+            <br>
+            <button class="choice">Reference Error</button>
+            <br>
+            <button class="choice">Null Error</button>
+            <br>
+        </div>
+    </div>
+    <!--Page 5-->
+    <div class="page">
+        <h2 class="question-header">Which of these is not a built-in methods in JavaScript?</h2>
+        <div>
+            <button class="choice">date</button>
+            <br>
+            <button class="choice">exec</button>
+            <br>
+            <button class="choice">pop</button>
+            <br>
+            <button class="choice">spread</button>
+            <br>
+        </div>
+    </div>
+    <!--Page 6-->
+    <div class="page">
+        <h2 class="question-header">Inside which HTML element do we put the JavaScript?</h2>
+        <div>
+            <button class="choice">'a'</button>
+            <br>
+            <button class="choice">'js'</button>
+            <br>
+            <button class="choice">'div'</button>
+            <br>
+            <button class="choice">'script'</button>
+            <br>
+        </div>
+    </div>
+
+    <!--Page 7-->
+
+    <div class = "page">
+        <h2 id = "done-header"> Yes YOUR Done!!!</h2>
+        <div>
+            Your Score!!! <span id = "score"></span>
+                <form>
+                <label for = "intials">Enter Initials:</label>
+                <input type  = "text" id = "initials">
+                <button type = "submit" id = "submit">Submit</button>
+            </form>
+            <p class = "off" id = "error">Please enter your initials.</p>
+        </div>
+    </div> 
+
+    <!--Page 8-->
+    <div class = "page">
+        <h2 id = "highscores-header">Highscores</h2>
+        <div>
+            <ul>
+            </ul>
+            <button type = "submit" id = "back-btn">Go back</button>
+            <button type = "submut" id = "clear-btn">Clear highscores</button>
+        </div>
+        <!--<div style= "widt"-->
+    </div>
+  <script src="./assets/script.js"></script>
+</body>
+</html>
