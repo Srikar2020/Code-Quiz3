@@ -1,3 +1,56 @@
+var timerEl = document.getElementById('time-left');
+var mainEl = document.getElementById('main');
+var startBtn = document.getElementById('start-quiz');
+var pages = document.querySelector(".page");
+
+
+
+// Timer that counts down from 5
+function countdown() {
+  var timeLeft = 75;
+
+  // Use the `setInterval()` method to call a function to be executed every 1000 milliseconds
+  var timeInterval = setInterval(function() {
+
+    if (timeLeft > 0) {
+    timerEl.textContent = "" + timeLeft;
+    timeLeft--;
+    }
+    else {
+    clearInterval(timeInterval);
+    displayMessage();
+    }
+
+  }, 1000);
+}
+
+// Displays the message one word at a time
+function displayMessage() {
+  var wordCount = 0;
+// Elements from the DOM
+var body = document.body;
+var container = document.querySelector(".container");
+  
+  
+var submitBtn = document.querySelector("#submit");  
+
+
+
+var highscores = document.querySelector("#highscores");
+  
+  
+  
+  
+
+//User page variable
+
+var currentPage = 0;
+
+// Which ever question user is currently on 
+
+var currentQuestion = 0;
+  
+  
 // functions 
 
 function loadPage(n) {
